@@ -6,7 +6,7 @@ Backend ASP.NET Core Web API cho ứng dụng chấm công Android. Cấu trúc 
 
 1. Mở solution `Huynh_Quang_Tuan_Nhom_Dasani_Sang_Thu_5.slnx` trong Visual Studio.
 2. Chọn profile `http` và chạy API. API dùng cổng `5193`; Android Emulator gọi `http://10.0.2.2:5193`.
-3. Khi khởi động, `DatabaseSeeder` gọi `EnsureCreatedAsync` và tạo bảng/roles nếu database mới. Cấu hình đang nhắm `AppChamCong_NguyenThanhDanh` trên SQL Server `LAPTOP-DB5QE99E` bằng Windows Authentication.
+3. Khi khởi động, `DatabaseSeeder` gọi `EnsureCreatedAsync` và tạo bảng/roles nếu database mới. Cấu hình đang nhắm `AppChamCong_HuynhQuangTuan_v2` trên SQL Server `LAPTOP-DB5QE99E` bằng Windows Authentication.
 
 ## Bí mật cục bộ
 
@@ -26,4 +26,4 @@ Dùng mật khẩu ứng dụng của nhà cung cấp email, không dùng mật 
 - Admin cấp QR theo ngày: `GET /api/attendance/qr`
 - Kiểm tra sức khỏe: `GET /api/health`; OpenAPI: `/openapi/v1.json`; Swagger UI: `/swagger`
 
-Ứng dụng tham khảo dùng `EnsureCreated` lúc chạy, không dùng EF migrations. Do đó không cần chạy `Update-Database` cho phiên bản này.
+Ứng dụng tham khảo dùng `EnsureCreated` lúc chạy, không dùng EF migrations. Do đó không cần chạy `Update-Database`.
