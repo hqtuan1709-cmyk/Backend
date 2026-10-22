@@ -1,0 +1,6 @@
+@Huynh_Quang_Tuan_Nhom_Dasani_Sang_Thu_5_HostAddress = http://localhost:5193
+
+GET {{Huynh_Quang_Tuan_Nhom_Dasani_Sang_Thu_5_HostAddress}}/api/health
+Accept: application/json
+
+###
